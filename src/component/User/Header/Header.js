@@ -25,7 +25,7 @@ export default function Header() {
 
     const filteredData = Data.filter(data => {
         // Check if user from session is null and data.name is "trang cá nhân"
-        return !(sessionStorage.getItem('user') === null && data.path === '/profile');
+        return !(sessionStorage.getItem('user') === null && data.path === '/account');
     });
     const toggleCategory = () => {
         setShowCategory(!showCategory);
