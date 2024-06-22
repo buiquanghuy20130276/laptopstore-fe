@@ -107,7 +107,7 @@ const Cart = () => {
                                             <td className="product-subtotal">
 
                                                 <span className="amount"><CurrencyFormatter
-                                                    value={totalPrice}/>₫</span>
+                                                    value={(item.product.price-item.product.price*item.product.sale/100)*item.quantity}/>₫</span>
                                             </td>
                                             <td className="product-remove">
                                                 <button className={"btn"}

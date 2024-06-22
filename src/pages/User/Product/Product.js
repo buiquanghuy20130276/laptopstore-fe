@@ -99,7 +99,7 @@ const Product = () => {
                                                 {categories.map(category => (
                                                     <li className="has-sub" key={category.id}>
                                                         <div className="form-check">
-                                                            <input className="form-check-input" type="radio" name="flexRadioDefault" id={`flexRadioDefault${category.id}`} onClick={() => setType(category.name)} />
+                                                            <input className="form-check-input" type="radio" name="flexRadioDefault" id={`flexRadioDefault${category.id}`} onClick={() => setType(category.value)} />
                                                             <label className="form-check-label" htmlFor={`flexRadioDefault${category.id}`}>
                                                                 {category.name}
                                                             </label>
